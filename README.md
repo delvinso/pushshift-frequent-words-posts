@@ -7,6 +7,6 @@ Using Google Big Query and Pushshift to Analyze Occurences of Words in Titles of
 
 `3. helpers.R` contains theme helpers.
 
-Resulting graphs can be foudn in `output/`.
+Resulting graphs can be found in `output/`.
 
 
