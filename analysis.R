@@ -2,10 +2,12 @@ library(tidytext)
 library(tidyverse)
 library(scales)
 
-infiles <- list.files(path = "data", full.names = TRUE)
+# infiles <- list.files(path = "data", full.names = TRUE)
 
-posts <- infiles %>% map_dfr(~ read_csv(.x) %>% 
-                      mutate(year =  as.numeric(gsub(".*?([0-9]+).*", "\\1", .x))))
+# posts <- infiles %>% map_dfr(~ read_csv(.x) %>% 
+#                       mutate(year =  as.numeric(gsub(".*?([0-9]+).*", "\\1", .x))))
+
+posts <- read_csv("data/posts_2016_to_2018.csv")
 
 # tokenizing into single words
   # tokenizing titles
